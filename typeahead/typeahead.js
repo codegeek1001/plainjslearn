@@ -25,12 +25,10 @@ document.getElementById("myTable").style.display="block";
 }
 function startSearch(e,myInput,myTable) {
    
-	document.getElementById("myInput").value=e.target.textContent;
-    document.getElementById("myTable").style.display="none";
+	myInput.value=e.target.textContent;
+    myTable.style.display="none";
     
     //fire actual search
-    console.log('Searching for'+ e.target.textContent)
-      console.log(e.target)
 
 }
 
