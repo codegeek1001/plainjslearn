@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+width:100%;
+ 
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 0px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin-top:0px;
+  
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+  cursor:pointer;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+#myTable {
+display: none;
+}
+
+.selected {
+margin-top:10px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Search Box</h2>
+<div id="typeahead" style="width:80%;">
+<input type="text" id="myInput" onkeyup="showSearchValues(this)" placeholder="Search for ..." title="Type in a name">
+<table id="myTable" onClick="startSearch(event,document.getElementById('myInput'),this)">
+</table>
+</div>
+ <script src="typeahead.js"></script>
+ <script>
+
+   var data = ["United Kingdom","China",
+     "United States",
+     "Japan",
+     "Germany",
+     "France"]
+
+   buildTypeaheadData(data,document.getElementById('myTable'));
+
+ </script>
+</body>
+</html>
