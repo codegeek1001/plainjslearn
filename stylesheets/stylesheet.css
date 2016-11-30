@@ -27,6 +27,23 @@ a {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
     margin-left: 1rem; }
+    .btn-demo {
+       border-radius: 30px;
+      
+         background-color: dimgray;
+       color: #fff;
+       margin-bottom: 1rem;
+       margin-left: 1rem;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    .btn-demo:hover {
+       color: #fff;
+  text-decoration: none;
+   background: #b40431;
+    }
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);

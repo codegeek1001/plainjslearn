@@ -53,23 +53,27 @@ margin-top:10px;
 </head>
 <body>
 
-<h2>Search Box</h2>
+<h2>Search for a Country</h2>
 <div id="typeahead" style="width:80%;">
-<input type="text" id="myInput" onkeyup="showSearchValues(this)" placeholder="Search for ..." title="Type in a name">
+<input type="text" id="myInput" onkeyup="showSearchValues(this,document.getElementById('myTable'))" placeholder="Search for ..." title="Type in a name">
 <table id="myTable" onClick="startSearch(event,document.getElementById('myInput'),this)">
 </table>
 </div>
+
  <script src="typeahead.js"></script>
  <script>
 
-   var data = ["United Kingdom","China",
+
+  //sample data. Replace this with your own data as needed via API call etc
+   var data = [
+     "United Kingdom",
+     "China",
      "United States",
      "Japan",
      "Germany",
      "France"]
-
+   //Build Data
    buildTypeaheadData(data,document.getElementById('myTable'));
-
  </script>
 </body>
 </html>
