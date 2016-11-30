@@ -1,6 +1,6 @@
 {
   "name": "Plainjslearn",
   "tagline": "Learn plain Javascript (no frameworks or jquery)",
-  "body": "# jslearner\r\nThis is an exercise to practice and learn Plain Javascript. No Frameworks and not even JQuery. I want to see if I can build small components using vanilla/plain js only. \r\n\r\n## Browser Support\r\n\r\nIE 9+ (sorry IE8 or below. No time for you anymore)\r\n\r\nChrome (Latest versions)\r\n\r\nFirefox (Latest Versions)\r\n\r\nSafari (At your own peril :)\r\n\r\n## Projects\r\n\r\n- typeahead: build a typeahead/search in plain js\r\n\r\n",
+  "body": "# PlainJSLearn\r\nThis is an exercise to practice and learn Plain Javascript. No Frameworks and not even JQuery. I want to see if I can build small components using vanilla/plain js only. \r\n\r\n## Browser Support\r\n\r\nIE 9+ (sorry IE8 or below. No time for you anymore)\r\n\r\nChrome (Latest versions)\r\n\r\nFirefox (Latest Versions)\r\n\r\nSafari (At your own peril :)\r\n\r\n## Projects\r\n\r\n- typeahead: build a typeahead/search in plain js\r\n\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
