@@ -1,4 +1,4 @@
-# jslearner
+# PlainJSLearn
 This is an exercise to practice and learn Plain Javascript. No Frameworks and not even JQuery. I want to see if I can build small components using vanilla/plain js only. 
 
 ## Browser Support
