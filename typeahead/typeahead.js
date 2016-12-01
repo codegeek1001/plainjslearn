@@ -1,14 +1,14 @@
 
 function showSearchValues(input,myTable) {
-    var filter, table, tr, td, i;
+    var filter, tr, td, i;
     if(input.value == "") {
         myTable.style.display="none";
     } else {
         myTable.style.display="block";
     }
     filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
+   
+    tr = myTable.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
         if (td) {
