@@ -1,55 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- 
-<style>
 
-button {
-  display:inline;
-  font-size: 16px;
-  background: #b40431;
-  color:#fff;
-  padding: 8px 14px 8px 14px;
-  cursor:pointer;
-  border-radius: 30px;
-  border: 1px solid #b40431;
-}
-
-</style>
+    <style>
+        button {
+            display: inline;
+            font-size: 16px;
+            background: #b40431;
+            color: #fff;
+            padding: 8px 14px 8px 14px;
+            cursor: pointer;
+            border-radius: 30px;
+            border: 1px solid #b40431;
+        }
+    </style>
 </head>
+
 <body>
 
-<h2>Search for a Country</h2>
-<div id="typeahead" style="width:80%;">
-<input type="text" id="myInput" onkeyup="showSearchValues(this,document.getElementById('myTable'))" placeholder="Search for ...">
-<button id="submit">Submit</button>
-<table id="myTable" onClick="setSearch(event,document.getElementById('myInput'),this)">
-</table>
-</div>
+    <h2>Search for a Country</h2>
+    <div id="typeahead" style="width:80%;">
+        <input type="text" id="myInput" onkeyup="showSearchValues(this,document.getElementById('myTable'))" placeholder="Search for ...">
+        <button id="submit">Submit</button>
+        <table id="myTable" onClick="setSearch(event,document.getElementById('myInput'),this)">
+        </table>
+    </div>
 
- <script src="typeahead.js"></script>
- <script>
-//sample data below. Replace this with your own data as needed via API call etc
-
-window.onload = function() {
-  
-    setStyle(document.getElementById('myInput'),document.getElementById('myTable'))
-
-    var req = new XMLHttpRequest();
-    req.open('GET','http://localhost:9800/countries.json');
-    req.onload = function () {
-        if(req.status >= 200 && req.status < 400) {
-            var data = JSON.parse(req.responseText);
-            //Build Data
-            buildTypeaheadData(data,document.getElementById('myTable'));
-        }
-    }
-    req.onerror = function() {
-        console.log('error in ajax');
-    }
-    req.send();
+   
     
-}// End window.onload
-</script>
+     <script src="typeahead.js"></script>
+     <script src="main.js"></script>
 </body>
+
 </html>
