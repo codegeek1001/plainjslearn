@@ -21,14 +21,12 @@
 
     <h2>Search for a Country</h2>
     <div id="typeahead" style="width:80%;">
-        <input type="text" id="myInput" onkeyup="showSearchValues(this,document.getElementById('myTable'))" placeholder="Search for ...">
+        <input type="text" id="myInput" onkeyup="typeahead.showSearchValues()" placeholder="Search for ...">
         <button id="submit">Submit</button>
-        <table id="myTable" onClick="setSearch(event,document.getElementById('myInput'),this)">
+        <table id="myTable" onClick="typeahead.setSearch(event)">
         </table>
     </div>
 
-   
-    
      <script src="typeahead.js"></script>
      <script src="main.js"></script>
 </body>
